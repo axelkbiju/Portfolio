@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axelkbiju | Cinematic Portfolio</title>
+    <meta name="description" content="Cinematic portfolio of Axel Kbiju - Visual Storyteller, Cinematographer, and Video Editor crafting emotional visuals.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cinematic: {
+                            black: '#050505',
+                            red: '#b30000',
+                            redDark: '#8a0000',
+                            gray: '#1a1a1a',
+                            light: '#e0e0e0'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cinematic-black text-cinematic-light font-body antialiased overflow-x-hidden">
+    
+
+    <!-- No JS Custom Cursor (Handled by CSS) -->
+
+    <!-- Loading Screen (Fade In Only) -->
+    <div id="loader" class="fixed inset-0 z-50 bg-cinematic-black pointer-events-none"></div>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 w-full h-full bg-black flex items-center justify-center">
+            <img src="images/hero-mountain.jpg" alt="Hero Mountain Background" class="object-cover w-full h-full max-h-screen hero-bg parallax-bg brightness-[0.9] contrast-[1.2] saturate-[1.1] sepia-[0.1] mix-blend-lighten opacity-90">
+            
+            <!-- Cinematic Lighting & Gradients -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/30 to-transparent z-10"></div>
+            <div class="absolute inset-0 bg-radial-gradient z-10 opacity-60"></div>
+        </div>
+
+        <div class="relative z-20 pl-8 pr-4 md:pl-20 lg:pl-32 pb-20 lg:pb-32 w-full h-full flex flex-col justify-center items-start">
+            <h1 class="hero-title font-bold text-[80px] md:text-[141px] leading-none tracking-[-0.05em] text-cinematic-red pb-4 mb-2 overflow-hidden" style="font-family: 'Helvetica World', Helvetica, Arial, sans-serif;">
+                <span class="inline-block translate-y-full block-reveal">axelkbiju.</span>
+            </h1>
+            <div class="hero-subtitle flex flex-col gap-1 font-bold text-[16px] md:text-[25px] text-gray-200 opacity-80 tracking-tighter uppercase" style="font-family: Arial, sans-serif;">
+                <div class="overflow-hidden"><span class="inline-block translate-y-full block-reveal">CINEMATOGRAPHER</span></div>
+                <div class="overflow-hidden"><span class="inline-block translate-y-full block-reveal">VIDEO EDITOR</span></div>
+                <div class="overflow-hidden"><span class="inline-block translate-y-full block-reveal">VISUAL STORYTELLER</span></div>
+            </div>
+            <p class="hero-small-text absolute bottom-12 md:bottom-16 left-8 md:left-20 lg:left-32 text-[16px] md:text-[20px] text-gray-300 italic tracking-tighter opacity-0" style="font-family: Arial, sans-serif;">
+                Crafting emotion through cinematic visuals.
+            </p>
+        </div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="w-full flex justify-center bg-black" style="font-family: Arial, sans-serif;">
+        <div class="flex flex-col lg:flex-row w-full" style="max-width: 1857.6px;">
+            <!-- Image Left -->
+            <div class="relative flex-shrink-0 w-full lg:w-1/2 bg-black" style="max-width: 928.8px; aspect-ratio: 928.8 / 1115.6;">
+                <img src="images/71BC1B4B-6994-491E-BA42-D685A3A4AEAB.jpg" alt="Axel Kbiju Portrait" class="absolute inset-0 w-full h-full object-cover grayscale opacity-75">
+                <!-- Red Tint Overlay -->
+                <div class="absolute inset-0 bg-cinematic-red opacity-10 mix-blend-color pointer-events-none"></div>
+            </div>
+            
+            <!-- Text Right -->
+            <div class="w-full lg:w-1/2 flex flex-col flex-grow">
+            <!-- Top Dark Section -->
+            <div class="pl-4 pr-6 pt-4 pb-4 md:pl-6 md:pr-10 md:pt-6 md:pb-6 lg:pl-8 lg:pr-12 lg:pt-8 lg:pb-8 flex flex-col justify-between flex-grow bg-black">
+                <!-- About Me -->
+                <div>
+                    <div class="inline-block">
+                        <h2 class="font-bold text-[80px] leading-none uppercase text-cinematic-red tracking-tighter">ABOUT ME.</h2>
+                        <div class="w-full h-[1px] bg-gray-400 mt-2 mb-6"></div>
+                    </div>
+                    <p class="text-[28px] text-gray-300 font-normal leading-tight tracking-tighter pr-2">
+                        Freelance cinematographer and editor focused on cinematic storytelling, immersive visuals, and emotionally driven edits.
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <div class="inline-block">
+                        <h2 class="font-bold text-[48px] leading-none text-cinematic-red tracking-tighter">Education.</h2>
+                        <div class="w-full h-[1px] bg-gray-400 mt-2 mb-6"></div>
+                    </div>
+                    <p class="text-[29px] text-gray-300 font-bold leading-tight tracking-tighter mb-1">
+                        St Joseph's College of Engineering and Technology.
+                    </p>
+                    <p class="text-[29px] text-gray-400 font-normal leading-tight tracking-tighter">
+                        Btech in Mechanical Engineering (2022-2026)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Light Section (Skills/Expertise) -->
+            <div class="bg-gray-300 text-black pl-4 pr-6 py-10 md:pl-6 md:pr-10 lg:pl-8 lg:pr-12 lg:py-12 flex justify-between gap-8 w-full">
+                <!-- Skills -->
+                <div class="flex-1">
+                    <div class="inline-block">
+                        <h3 class="font-bold text-cinematic-red text-[40px] leading-none tracking-tighter">Skills.</h3>
+                        <div class="w-full h-[2px] bg-black mt-2 mb-4"></div>
+                    </div>
+                    <ul class="text-[24px] font-normal leading-tight tracking-tighter">
+                        <li>Davinci Resolve</li>
+                        <li>Final Cut Pro</li>
+                        <li>Capcut</li>
+                        <li>Lightroom</li>
+                    </ul>
+                </div>
+
+                <!-- Expertise -->
+                <div class="flex-1 text-right flex flex-col items-end">
+                    <div class="inline-block text-right">
+                        <h3 class="font-bold text-cinematic-red text-[40px] leading-none tracking-tighter">Expertise.</h3>
+                        <div class="w-full h-[2px] bg-black mt-2 mb-4"></div>
+                    </div>
+                    <ul class="text-[24px] font-normal leading-tight tracking-tighter">
+                        <li>Color Grading</li>
+                        <li>Videography</li>
+                        <li>Video Editing</li>
+                        <li>Story Teller/Visual Identity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section id="showreel" class="w-full pt-16 pb-0 bg-black relative flex flex-col items-center">
+        <div class="w-full px-6 mb-16 flex justify-center">
+            <h2 class="font-bold text-[80px] md:text-[170px] leading-none text-cinematic-red uppercase tracking-tighter showreel-title" style="font-family: 'Helvetica World', Helvetica, Arial, sans-serif;">
+                SHOWREEL.
+            </h2>
+        </div>
+        
+        <div class="w-full aspect-video relative showreel-container group overflow-hidden bg-black cursor-pointer">
+            <!-- Scroll-triggered Video -->
+            <video id="showreel-video" src="videos/copy_7BD2BE02-1F43-4CF3-92C5-D22A56BFAC28.MOV" class="w-full h-full object-cover object-center opacity-0" loop playsinline preload="auto"></video>
+            
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20 pointer-events-none"></div>
+
+            <!-- Custom Play/Pause Button -->
+            <div id="showreel-btn" class="absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity duration-1000 opacity-0 z-20">
+                <div class="flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                    <svg id="icon-play" class="w-16 h-16 md:w-24 md:h-24 text-white translate-x-1 absolute transition-opacity duration-300 opacity-100 drop-shadow-[0_4px_15px_rgba(0,0,0,0.35)]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    <svg id="icon-pause" class="w-16 h-16 md:w-24 md:h-24 text-white absolute transition-opacity duration-300 opacity-0 drop-shadow-[0_4px_15px_rgba(0,0,0,0.35)]" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Frames (Gallery) -->
+    <section id="frames" class="w-full pt-12 pb-0 bg-black flex flex-col items-center">
+        <div class="w-full max-w-[1857.6px] px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col items-start gap-12">
+            <h2 class="font-bold text-[48px] leading-none text-white uppercase tracking-tighter" style="font-family: 'Helvetica World', Helvetica, Arial, sans-serif;">
+                VISUAL FRAMES.
+            </h2>
+            
+            <!-- 2x2 Grid -->
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+                <!-- Top Left -->
+                <div class="w-full aspect-video overflow-hidden">
+                    <img src="images/IMG_0634.jpg" alt="Visual Frame Top Left" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <!-- Top Right -->
+                <div class="w-full aspect-video overflow-hidden">
+                    <img src="images/IMG_0659.JPG" alt="Visual Frame Top Right" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <!-- Bottom Left -->
+                <div class="w-full aspect-video overflow-hidden">
+                    <img src="images/IMG_9643.JPG" alt="Visual Frame Bottom Left" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <!-- Bottom Right -->
+                <div class="w-full aspect-video overflow-hidden">
+                    <img src="images/D12805D3-A391-4276-A63F-32DDE8E7DD0C_1_201_a.jpeg" alt="Visual Frame Bottom Right" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects Section -->
+    <section id="projects" class="w-full pt-16 pb-24 bg-black flex flex-col items-center">
+        <div class="w-full max-w-[1857.6px] px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col gap-6">
+            <!-- Title Banner -->
+            <div class="w-full bg-[#d9d9d9] py-4 flex justify-center items-center">
+                <h2 class="font-bold text-[32px] md:text-[65px] leading-none text-black uppercase tracking-tighter" style="font-family: 'Helvetica World', Helvetica, Arial, sans-serif;">
+                    OTHER PROJECTS.
+                </h2>
+            </div>
+            
+            <!-- 2x3 Video Grid -->
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Top Left -->
+                <div class="w-full aspect-video bg-black overflow-hidden">
+                    <video src="videos/copy_D32A8D0E-BEA1-4D09-8704-23378B208D26.MOV" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer project-video" autoplay loop muted playsinline preload="auto"></video>
+                </div>
+                <!-- Top Right -->
+                <div class="w-full aspect-video bg-black overflow-hidden">
+                    <video src="videos/copy_8CF7D8FE-5B12-4899-9A0B-E181EA142381.MOV" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer project-video" autoplay loop muted playsinline preload="auto"></video>
+                </div>
+                <!-- Middle Left -->
+                <div class="w-full aspect-video bg-black overflow-hidden">
+                    <video src="videos/copy_B07AAD85-15B9-45A2-A499-14F2D885BEB7.MOV" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer project-video" autoplay loop muted playsinline preload="auto"></video>
+                </div>
+                <!-- Middle Right -->
+                <div class="w-full aspect-video bg-black overflow-hidden">
+                    <video src="videos/copy_3E8D8A0F-C392-46DC-9266-6D6E3F84A1C5.MOV" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer project-video" autoplay loop muted playsinline preload="auto"></video>
+                </div>
+                <!-- Bottom Left -->
+                <div class="w-full aspect-video bg-black overflow-hidden">
+                    <video src="videos/copy_171397BC-6C82-4E2E-A373-DCD1E9EE509F.MOV" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer project-video" autoplay loop muted playsinline preload="auto"></video>
+                </div>
+                <!-- Bottom Right -->
+                <div class="w-full aspect-video bg-black overflow-hidden">
+                    <video src="videos/copy_25D234D9-2B60-407C-A231-06B5A3B3C42A.MOV" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer project-video" autoplay loop muted playsinline preload="auto"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="w-full pt-32 pb-32 px-4 md:px-8 lg:px-12 xl:px-16 bg-black flex flex-col items-center">
+        <div class="w-full max-w-[1857.6px]">
+            <!-- Heading -->
+            <h2 class="font-bold text-[40px] md:text-[80px] leading-none uppercase tracking-tighter mb-24" style="font-family: 'Helvetica World', Helvetica, Arial, sans-serif;">
+                <span class="text-[#e6e6e6]">LET'S CREATE SOMETHING</span> <span class="text-cinematic-red">CINEMATIC.</span>
+            </h2>
+            
+            <div class="flex flex-col lg:flex-row gap-16 lg:gap-8 justify-between w-full">
+                <!-- Left Column -->
+                <div class="w-full lg:w-1/2 flex flex-col justify-between">
+                    <div class="text-[#e6e6e6] text-[22px] font-normal leading-relaxed mb-24 tracking-tighter" style="font-family: Arial, sans-serif;">
+                        <p>Available for freelance opportunities worldwide.</p>
+                        <p>Let's create something cinematic together.</p>
+                    </div>
+                    
+                    <div class="flex flex-col gap-6 items-start text-white text-[24px] font-normal" style="font-family: Arial, sans-serif;">
+                        <a href="tel:+919605881381" class="hover:scale-110 transition-transform duration-300 origin-left inline-block tracking-wide">(+91)9605881381</a>
+                        <a href="mailto:axelkbiju@gmail.com" class="hover:scale-110 transition-transform duration-300 origin-left inline-block tracking-tighter">axelkbiju@gmail.com</a>
+                        <a href="https://www.instagram.com/axelkbiju" target="_blank" class="hover:scale-110 transition-transform duration-300 origin-left flex items-center gap-4 tracking-tighter">
+                            <!-- Instagram Icon -->
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            @axelkbiju
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column (Form) -->
+                <div class="w-full lg:w-1/2 flex justify-end">
+                    <form action="https://formsubmit.co/axelkbiju@gmail.com" method="POST" class="w-full max-w-2xl bg-[#0f0f0f] p-12 lg:p-16 flex flex-col gap-14">
+                        <!-- Disable Captcha for smoother experience -->
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="w-full">
+                            <input type="text" name="name" placeholder="YOUR NAME" required class="w-full bg-transparent border-b border-white/20 pb-4 text-white font-bold tracking-tighter focus:outline-none focus:border-cinematic-red transition-colors placeholder-white text-sm" style="font-family: Arial, sans-serif;">
+                        </div>
+                        <div class="w-full">
+                            <input type="email" name="email" placeholder="EMAIL ADDRESS" required class="w-full bg-transparent border-b border-white/20 pb-4 text-white font-bold tracking-tighter focus:outline-none focus:border-cinematic-red transition-colors placeholder-white text-sm" style="font-family: Arial, sans-serif;">
+                        </div>
+                        <div class="w-full">
+                            <input type="text" name="message" placeholder="PROJECT DETAILS" required class="w-full bg-transparent border-b border-white/20 pb-4 text-white font-bold tracking-tighter focus:outline-none focus:border-cinematic-red transition-colors placeholder-white text-sm" style="font-family: Arial, sans-serif;">
+                        </div>
+                        <div class="pt-4">
+                            <button type="submit" class="bg-cinematic-red text-white text-[14px] font-bold uppercase tracking-tighter px-10 py-5 hover:bg-red-700 transition-colors inline-block cursor-pointer" style="font-family: Arial, sans-serif;">
+                                SEND MESSAGE
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/10 text-center bg-black">
+        <p class="text-gray-600 text-xs tracking-tighter" style="font-family: Arial, sans-serif;">
+            &copy; 2026 axelkbiju. Not content. Just captured existence.
+        </p>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
